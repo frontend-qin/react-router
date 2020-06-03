@@ -5,11 +5,16 @@
 2. 根据匹配到的路径，渲染对应的组件
 ```
 
-### hash
+### hash 路由
 
-[hash 演示](!https://codesandbox.io/s/happy-shamir-66snb?file=/index.html)
+---
 
-### history
+[hash 演示](https://codesandbox.io/s/happy-shamir-66snb?file=/index.html)
 
-[History_API](!https://developer.mozilla.org/zh-CN/docs/Web/API/History_API)
+### history 路由
+
+[History_API](https://developer.mozilla.org/zh-CN/docs/Web/API/History_API)
+
+---
+
 [history 路由演示](https://codesandbox.io/s/zealous-wood-byciw?file=/index.html)
