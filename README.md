@@ -22,3 +22,7 @@
 ### react-router-dom 使用
 
 [hashRouter 使用](https://codesandbox.io/s/interesting-bassi-lmdfy?file=/src/index.js)
+
+### 实现 hashRouter
+
+[手写实现 hashRouter](https://codesandbox.io/s/pensive-fast-d2uoo?file=/src/index.js)
