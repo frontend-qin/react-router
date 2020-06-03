@@ -6,7 +6,7 @@ let hash = () => window.location.hash.slice(1);
 class HashRouter extends Component {
   state = {
     location: {
-      pathname: hash(),
+      pathname: hash() || '/',
       state: null,
     },
   };
