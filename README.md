@@ -18,3 +18,7 @@
 ---
 
 [history 路由演示](https://codesandbox.io/s/zealous-wood-byciw?file=/index.html)
+
+### react-router-dom 使用
+
+[hashRouter 使用](https://codesandbox.io/s/interesting-bassi-lmdfy?file=/src/index.js)
