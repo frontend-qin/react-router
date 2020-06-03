@@ -11,7 +11,7 @@ let App = () => {
   return (
     <Router>
       <div>
-        <Route component={Home} path='/'></Route>
+        <Route component={Home} path='/' exact></Route>
         <Route component={About} path='/about'></Route>
       </div>
     </Router>
