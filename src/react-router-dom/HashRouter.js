@@ -15,6 +15,8 @@ class HashRouter extends Component {
   UNSAFE_componentWillMount() {
     // 监听hash 值的变化
     window.addEventListener('hashchange', () => {
+      console.log(window.location.hash);
+
       this.setState((state) => ({
         ...state,
         location: {
