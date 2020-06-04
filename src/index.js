@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { HashRouter, Route, Link } from './react-router-dom';
+import { HashRouter, Route, Link, Switch } from './react-router-dom';
 
 import Home from './components/Home';
 import About from './components/About';
@@ -12,9 +12,11 @@ let App = () => (
     <Link to='/about'>about</Link>
     <Link to='/mine'>mine</Link>
     <div>
-      <Route component={Home} path='/' exact></Route>
-      <Route component={About} path='/about'></Route>
-      <Route component={Mine} path='/mine'></Route>
+      <Switch>
+        <Route component={Home} path='/' exact></Route>
+        <Route component={About} path='/about'></Route>
+        <Route component={Mine} path='/mine'></Route>
+      </Switch>
     </div>
   </HashRouter>
 );
