@@ -1,12 +1,17 @@
 import { Component } from 'react';
 import Context from './Context';
 
-// 一旦匹配成功，就不再向后匹配了
 class Redirect extends Component {
   static contextType = Context;
+  componentDidMount() {
+    const { from, to } = this.props;
+    const { pathname } = this.context.location;
+    // 没有传入from 或者 传入的from 和上下文的 pathname 一样才进行跳转
+    if (!from || from === pathname) {
+      this.context.history.push(to);
+    }
+  }
   render() {
-    // console.log(10);
-    this.context.history.push(this.props.to);
     return null;
   }
 }

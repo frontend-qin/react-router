@@ -13,10 +13,10 @@ let App = () => (
     <Link to='/mine'>mine</Link>
     <div>
       <Switch>
-        <Route component={Home} path='/' exact></Route>
-        <Route component={About} path='/about'></Route>
-        <Route component={Mine} path='/mine'></Route>
-        <Redirect to='/'></Redirect>
+        <Route component={Home} path='/' exact />
+        <Route component={About} path='/about' />
+        <Route component={Mine} path='/mine' />
+        <Redirect to='/' />
       </Switch>
     </div>
   </HashRouter>
