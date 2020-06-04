@@ -16,6 +16,7 @@ class HashRouter extends Component {
     // console.log(this.props);
     // 如果hash 值改变了，就改变状态
     window.addEventListener('hashchange', () => {
+      console.log(hash());
       this.setState({
         location: {
           // ...this.state.location,
