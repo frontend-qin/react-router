@@ -3,15 +3,17 @@ import Context from './Context';
 class HashRouter extends Component {
   state = {
     location: {
-      pathname: window.location.hash || '#/',
+      pathname: '#/', // 默认hash 值路径
     },
     history: {
       push(path) {
+        // 路径跳转方法
         window.location.hash = '#' + path;
       },
     },
   };
   UNSAFE_componentWillMount() {
+    // 监听hash 值的变化
     window.addEventListener('hashchange', () => {
       this.setState((state) => ({
         ...state,
