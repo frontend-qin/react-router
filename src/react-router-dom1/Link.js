@@ -10,8 +10,11 @@ class Link extends Component {
   };
   render() {
     const { to, children } = this.props;
+    // onClick={(e) => this.hashPush(e, to)}
     return (
-      <a href={`#` + to} onClick={(e) => this.hashPush(e, to)}>
+      <a
+        href={`#` + to}
+        onClick={() => this.context.history.push(this.props.to)}>
         {children}
       </a>
     );

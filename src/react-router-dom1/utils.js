@@ -10,8 +10,8 @@ export function isMatch(context, props) {
   const { path, exact = false, to, from } = props;
   // 拿到上下文中的 hash 值
   let { pathname } = context.location;
-  // 截取掉 # 号
-  pathname = pathname.slice(1);
+  // // 截取掉 # 号
+  // pathname = pathname.slice(1);
   // 转成正则
   // path || to 如果是Route 组件上都是path， 但Redirect 上是 to 属性，这里需要处理
   let regexp = pathToRegexp(path || to || from, [], { end: exact });
