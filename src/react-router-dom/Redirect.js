@@ -7,9 +7,7 @@ class Redirect extends Component {
     const { from, to } = this.props;
     const { pathname } = this.context.location;
     // 没有传入from 或者 传入的from 和上下文的 pathname 一样才进行跳转
-    if (!from || from === pathname) {
-      this.context.history.push(to);
-    }
+    (!from || from === pathname) && this.context.history.push(to);
   }
   render() {
     return null;
